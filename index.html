@@ -1,0 +1,60 @@
+< <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="display">98649
+            <!-- <input type="text" id="display" readonly > -->
+            </div>
+        <div class="buttons">
+           <!---- Number Buttons --->
+            <button class="c" >c</button>
+            <button class="nu" >/</button>
+            
+            <button class="nu" >*</button>
+        </div>
+        <div>
+            <button class="number" onclick="appendNumber('7')">7</button>
+            <button class="number" onclick="appendNumber('8')">8</button>
+            <button class="number" onclick="appendNumber('9')">9</button>
+            <button class="minus" onclick="appendOperator('-')">-</button>
+
+        </div>
+        <div>
+            <button class="number" onclick="appendNumber('4')">4</button>
+            <button class="number" onclick="appendNumber('5')">5</button>
+            <button class="number" onclick="appendNumber('6')">6</button>
+            <button id="op" onclick="appendOperator('+')">+</button>
+            </div>
+
+            <div>
+            <button class="number" onclick="appendNumber('1')">1</button>
+        
+
+            <button class="number" onclick="appendOperator('2')">2</button>
+            <button class="number" onclick="appendOperator('3')">3</button>
+            </div>
+
+
+            <button class="number" onclick="appendOperator('0')">0</button>
+            <button class="number" onclick="appendOperator('00')">00</button> 
+
+            <!-- Other Buttons -->
+            <button class="number" onclick="clearDisplay()">.</button>
+            <button class="number" onclick="calculate()">=</button>
+        </div>
+    </div>
+
+    
+</body>
+</html>
+
+
+
+
+
